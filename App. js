@@ -1,0 +1,78 @@
+import React from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.logo}>TAMMUNA XX</Text>
+
+      <Text style={styles.subtitle}>
+        Intelligence. Protection. The Future.
+      </Text>
+
+      <View style={styles.circle}>
+        <Text style={styles.x}>XX</Text>
+      </View>
+
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>OPEN TAMMUNA XX AI</Text>
+      </TouchableOpacity>
+
+      <Text style={styles.status}>SYSTEM • READY</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 24,
+  },
+
+  logo: {
+    fontSize: 32,
+    fontWeight: "bold",
+    letterSpacing: 5,
+  },
+
+  subtitle: {
+    marginTop: 12,
+    fontSize: 14,
+    textAlign: "center",
+  },
+
+  circle: {
+    width: 150,
+    height: 150,
+    borderRadius: 75,
+    borderWidth: 3,
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 40,
+  },
+
+  x: {
+    fontSize: 42,
+    fontWeight: "bold",
+  },
+
+  button: {
+    paddingVertical: 16,
+    paddingHorizontal: 28,
+    borderWidth: 2,
+    borderRadius: 30,
+  },
+
+  buttonText: {
+    fontWeight: "bold",
+    letterSpacing: 1,
+  },
+
+  status: {
+    marginTop: 30,
+    fontSize: 12,
+    letterSpacing: 2,
+  },
+});
